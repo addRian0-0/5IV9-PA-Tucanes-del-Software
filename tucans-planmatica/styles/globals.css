@@ -1,9 +1,13 @@
 html,
 body {
+  /* Variables globales (Formulario) - adrian */
+  --text-color: rgb(14, 123, 67);
+  --main-color: #0E7B43;
+  --hover-color: rgb(34, 119, 85);
+  --hover-secondary-color: rgba(53, 114, 102, 0.2);
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {

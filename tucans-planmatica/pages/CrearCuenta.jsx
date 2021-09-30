@@ -1,70 +1,85 @@
-import React from 'react';
-import LayoutIndex from '../components/LayoutIndex';
-import MainHead from '../components/MainHead';
-
-/* Los estilos en next/react se usan a traves de modulos
-para aplicarlos se deben importar desde la carpeta styles y se le puede
-asignar cualquier nombre en este caso sera 'stylesC' 
-NOTA: SIEMPRE DEBEN LLEVAR LA CONSTRUCCION DEL NOMBRE DE ARCHIVO  DE LA SIGUINETE MANERA: 
-(nombrearchivo.module.css), si no lleva esa estructura de nombre habra errores*/
-import stylesC from "../styles/CrearCuenta.module.css";
-
-/* Estilos importados de la libreria de bootstrap */
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react'
+import styles from "../styles/Forms.module.css";
 
 export default function CrearCuenta() {
     return (
         <div>
-            {/* MainHead representa la forma de crear encabezados en react y next */}
-            <MainHead tituloPestana="PlantsMatica | Crear cuenta" />
-            <LayoutIndex>
-                {/* Las sintaxis de algunos elementos html en react cambian como
-                al momento de definir clases: 
-                <div class="lorem" >lorem</div>
-                Cambiaria al atributo className
-                <div className="lorem" >lorem</div> 
-                Para aplicar estilos propios de archivos que ya hemos importado 'stylesC' seria: */}
-                <div className={stylesC.form_container} >
-                    <form className={stylesC.form} >
-                        <h2 className={stylesC.h2} >Crear cuenta</h2>
+            <form className={styles.root} >
+                <h2 className={styles.title} >Crear cuenta</h2>
 
-                        <div className="input-group input-group-sm mb-3">
-                            <span className="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
-                            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-                        </div>
-
-                        <div className="input-group input-group-sm mb-3">
-                            <span className="input-group-text" id="inputGroup-sizing-sm">Nombre de usuario</span>
-                            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-                        </div>
-
-                        <div className="input-group mb-3">
-                            <select className="form-select" id="inputGroupSelect04" >
-                                <option selected>Sexo...</option>
-                                <option >Masculino</option>
-                                <option >Prefiero no decirlo</option>
-                            </select>
-                        </div>
-
-                        <div className="input-group input-group-sm mb-3">
-                            <span className="input-group-text" id="inputGroup-sizing-sm">Correo eletronico</span>
-                            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-                        </div>
-
-                        <div className="input-group input-group-sm mb-3">
-                            <span className="input-group-text" id="inputGroup-sizing-sm">Contrasena </span>
-                            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-                        </div>
-
-                        <div className="input-group input-group-sm mb-3">
-                            <span className="input-group-text" id="inputGroup-sizing-sm">Verificar Contrasena </span>
-                            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-                        </div>
-
-                        <button type="submit m-2" className="btn btn-success">Success</button>
-                    </form>
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Nombre de usuario</label>
+                    <input className={styles.input} />
                 </div>
-            </LayoutIndex>
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Correo</label>
+                    <input className={styles.input} />
+                </div>
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Contraseña</label>
+                    <input type="password" className={styles.input} />
+                </div>
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Verificar contraseña</label>
+                    <input type="password" className={styles.input} />
+                </div>
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Estado de la republica</label>
+                    <select className={styles.input} name="estado">
+                        <option value="no">Seleccione uno...</option>
+                        <option value="no">Resido fuera del pais</option>
+                        <option value="Aguascalientes">Aguascalientes</option>
+                        <option value="Baja California">Baja California</option>
+                        <option value="Baja California Sur">Baja California Sur</option>
+                        <option value="Campeche">Campeche</option>
+                        <option value="Chiapas">Chiapas</option>
+                        <option value="Chihuahua">Chihuahua</option>
+                        <option value="CDMX">Ciudad de México</option>
+                        <option value="Coahuila">Coahuila</option>
+                        <option value="Colima">Colima</option>
+                        <option value="Durango">Durango</option>
+                        <option value="Estado de México">Estado de México</option>
+                        <option value="Guanajuato">Guanajuato</option>
+                        <option value="Guerrero">Guerrero</option>
+                        <option value="Hidalgo">Hidalgo</option>
+                        <option value="Jalisco">Jalisco</option>
+                        <option value="Michoacán">Michoacán</option>
+                        <option value="Morelos">Morelos</option>
+                        <option value="Nayarit">Nayarit</option>
+                        <option value="Nuevo León">Nuevo León</option>
+                        <option value="Oaxaca">Oaxaca</option>
+                        <option value="Puebla">Puebla</option>
+                        <option value="Querétaro">Querétaro</option>
+                        <option value="Quintana Roo">Quintana Roo</option>
+                        <option value="San Luis Potosí">San Luis Potosí</option>
+                        <option value="Sinaloa">Sinaloa</option>
+                        <option value="Sonora">Sonora</option>
+                        <option value="Tabasco">Tabasco</option>
+                        <option value="Tamaulipas">Tamaulipas</option>
+                        <option value="Tlaxcala">Tlaxcala</option>
+                        <option value="Veracruz">Veracruz</option>
+                        <option value="Yucatán">Yucatán</option>
+                        <option value="Zacatecas">Zacatecas</option>
+                    </select>
+                </div>
+
+                <div className={styles.cont_input}>
+                    <label className={styles.text} >Sexo</label>
+                    <select className={styles.input} name="sexo">
+                        <option value="Masculino" >Masculino</option>
+                        <option value="Femenino" >Femenino</option>
+                        <option value="Prefiero no decirlo">Prefiero no decirlo</option>
+                    </select>
+                </div>
+
+                <div className={styles.cont_input} >
+                    <label className={styles.text} >Edad</label>
+                    <input type="text" className={styles.input} />
+                </div>
+
+                <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
+
+            </form>
         </div>
     )
 }
