@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "../styles/Forms.module.css";
+import TerminosYCondiciones from "../components/TerminosYCondiciones";
 
 export default function CrearCuenta() {
     return (
@@ -76,7 +77,9 @@ export default function CrearCuenta() {
                     <label className={styles.text} >Edad</label>
                     <input type="text" className={styles.input} />
                 </div>
-
+                <div style={{marginLeft: '30px'}}>
+                    <TerminosYCondiciones />
+                </div>
                 <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
 
             </form>
