@@ -1,12 +1,19 @@
 import React from 'react'
 import styles from "../styles/Forms.module.css";
 import TerminosYCondiciones from "../components/TerminosYCondiciones";
-
+import MainHead from '../components/MainHead';
+import LayoutIndex from '../components/LayoutIndex';
 export default function CrearCuenta() {
+    
     return (
+        
+
+        
         <div>
+            <MainHead tituloPestana="Crear Cuenta" />
+            <LayoutIndex>
             <form className={styles.root} >
-                <h2 className={styles.title} >Crear cuenta</h2>
+                <h2 className={styles.title} > <a href="/">←</a> Crear cuenta</h2>
 
                 <div className={styles.cont_input}>
                     <label className={styles.text} >Nombre de usuario</label>
@@ -83,6 +90,8 @@ export default function CrearCuenta() {
                 <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
 
             </form>
+            </LayoutIndex>
         </div>
+        
     )
 }
