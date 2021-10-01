@@ -1,10 +1,14 @@
 import React from 'react'
 import styles from "../styles/Forms.module.css";
 import TerminosYCondiciones from "../components/TerminosYCondiciones";
+import MainHead from '../components/MainHead';
 
 export default function CrearCuenta() {
+    
     return (
+        
         <div>
+            <title>Crear Cuenta</title>
             <form className={styles.root} >
                 <h2 className={styles.title} >Crear cuenta</h2>
 
