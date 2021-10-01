@@ -18,7 +18,7 @@ export default function Index() {
             <div className={styles.container_3}>
               Bienvenido a PlantMatica, el sitio ideal para conocer sobre herbolaria en México.<br/>
               Haznos saber qué buscas y la información llegará volando.
-              <Image src={manzanilla}/>
+              <Image className={styles.index_img} src={manzanilla}/>
             </div>
           </center>
           </div>

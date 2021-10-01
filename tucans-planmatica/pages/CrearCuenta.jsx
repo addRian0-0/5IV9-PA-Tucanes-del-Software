@@ -6,9 +6,12 @@ import MainHead from '../components/MainHead';
 export default function CrearCuenta() {
     
     return (
+        <LayoutIndex>
+
         
         <div>
-            <title>Crear Cuenta</title>
+            <MainHead tituloPestana="Crear Cuenta" />
+            
             <form className={styles.root} >
                 <h2 className={styles.title} >Crear cuenta</h2>
 
@@ -87,6 +90,8 @@ export default function CrearCuenta() {
                 <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
 
             </form>
+
         </div>
+        </LayoutIndex>
     )
 }
