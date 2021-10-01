@@ -11,14 +11,14 @@ export default function Index() {
       <LayoutIndex>
         <font size={4} face="Work Sans">
           <div className={styles.container_1}>
-          <font size={5} face="Work Sans" color="007200">
+          <font size={6} face="Work Sans" color="007200">
           <center><h1>Tucan's PlantMatica</h1></center>
           </font>
           <center>
             <div className={styles.container_3}>
-              Bienvenido a PlantMatica, el sitio ideal para conocer sobre herbolaria en México.<br/>
-              Haznos saber qué buscas y la información llegará volando.
-              <Image className={styles.index_img} src={manzanilla}/>
+              <h3>Bienvenido a PlantMatica, el sitio ideal para conocer sobre herbolaria en México.<br/>
+              Haznos saber qué buscas y la información llegará volando.<br/><br/><br/></h3>
+              <Image className={styles.index_img} src={manzanilla} width={'100vw'} height={'100vh'} />
             </div>
           </center>
           </div>

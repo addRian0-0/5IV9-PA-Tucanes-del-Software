@@ -166,13 +166,21 @@
   text-align: center;
 }
 
+/*Contenido*/
+
+.index_img{
+  width: 50%;
+}
+
+/*Footer*/
+
 .footy {
   background-image: linear-gradient(to top, rgba(46, 33, 23, 0.8) 0%, rgba(48, 31, 18, 0.8) 100%), url(../src/head_bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top:40px;
+  margin-top:35px;
   bottom: 0;
   width: 100%;
   box-shadow: 0px 0px 7px rgb(50, 50, 50);
