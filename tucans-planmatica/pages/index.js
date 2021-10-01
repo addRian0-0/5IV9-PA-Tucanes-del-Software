@@ -14,9 +14,7 @@ export default function Index() {
           <center><h1>Tucan's PlantMatica</h1></center>
           </font>
           <div className={styles.container_2}>
-            <aside className={styles.aside_0}>Imagenes</aside>
             <div className={styles.container_3}>Texto wiiiiiiii</div>
-            <aside className={styles.aside_0}>Más imagenes</aside>
           </div>
             
           </div>
