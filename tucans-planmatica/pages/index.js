@@ -3,11 +3,13 @@ import Image from 'next/image';
 import MainHead from '../components/MainHead';
 import LayoutIndex from '../components/LayoutIndex';
 import styles from "../styles/Home.module.css";
+
 import ip1 from "../src/index_plant.png";
 import ip2 from "../src/index_plant2.png";
 import ip3 from "../src/index_plant3.png";
 import ip4 from "../src/index_plant4.png";
 import ip5 from "../src/index_plant5.png";
+
 export default function Index() {
   return (
     <div>
@@ -21,12 +23,18 @@ export default function Index() {
           <center>
             <div className={styles.container_3}>
               <h3>Bienvenido a PlantMatica, el sitio ideal para conocer sobre herbolaria en México.<br/>
-              Haznos saber qué buscas y la información llegará volando.<br/><br/><br/></h3>
-              
-            <button>
-
-            </button>
-
+              Haznos saber qué buscas y la información llegará volando.</h3>
+              <center>
+              <br/>
+              <div className={styles.container_4}>
+                <a href="CrearCuenta"><button className={styles.btnSubmit} type="submit">Crear Cuenta</button></a>
+                <button className={styles.btnSubmit} type="submit">Iniciar Sesión</button>
+              </div>
+              <br/>
+              </center>
+              <h3>
+                
+              </h3>
             </div>
           </center>
           </div>

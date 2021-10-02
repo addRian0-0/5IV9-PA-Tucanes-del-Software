@@ -83,10 +83,10 @@ export default function CrearCuenta() {
                 <div className={styles.cont_input} >
                     <label className={styles.text} >Edad</label>
                     <input type="text" className={styles.input} />
-                </div>
+                </div><br/>
                 <div style={{marginLeft: '30px'}}>
-                    <TerminosYCondiciones />
-                </div>
+                    <center><TerminosYCondiciones /></center>
+                </div><br/>
                 <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
 
             </form>

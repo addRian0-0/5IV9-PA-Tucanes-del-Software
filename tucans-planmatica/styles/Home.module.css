@@ -139,6 +139,11 @@
 }
 
 .container_0 {
+  background-image: linear-gradient(to top, rgba(240, 240, 240, 0.8) 0%, rgba(255, 255, 255, 0.825) 100%), url(../src/head_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   display: inline-flexbox;
 }
 
@@ -152,7 +157,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
 }
+
+  .container_2 table{
+    width: 100%;
+    text-align: center;
+  }
 
 .container_3{
   width: 85%;
@@ -161,15 +172,30 @@
 }
 
 .container_4{
-  width: 100%;
-  min-width: 300px;
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-between;
   
 }
 
-.container_4 table{
-  width: 100%;
-  text-align: center;
+.btnSubmit{
+  margin: 16px;
+  border-radius: 4px;
+  height: 35px;
+  font-size: 18px;
+  color: white;
+  background-color: var(--main-color);
+  border: 0;
+  transition: 0.3s;
 }
+
+.btnSubmit:hover{
+  cursor: pointer;
+  background-color: var(--hover-color);
+  transform: scale(1.1, 1.1);
+}
+
 
 .aside_0{
   width: 20%;
@@ -179,9 +205,17 @@
 
 /*Contenido*/
 
+.cont_img{
+  width: fit-content;
+  
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(50,50,50);
+}
+
 .index_img{
   border-radius: 10px;
   padding-left: 10px;
+  
 }
 
 /*Footer*/
@@ -192,7 +226,7 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top:35px;
+  margin-top:32px;
   bottom: 0;
   width: 100%;
   box-shadow: 0px 0px 7px rgb(50, 50, 50);
@@ -234,5 +268,6 @@
 }
 
 .git_logo {
+  
   width: 7%;
 }
