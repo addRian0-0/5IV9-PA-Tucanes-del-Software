@@ -43,12 +43,26 @@
     height: 35px;
     font-size: 18px;
     color: white;
+    align-items: center;
     background-color: var(--main-color);
     border: 0;
     transition: 0.3s;
 }
 
-.btnSubmit:hover{
+.btnGoogle{
+    margin: 16px;
+    border-radius: 4px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: var(--main-color);
+    border: 0;
+    transition: 0.3s;
+}
+
+.btnSubmit:hover, .btnGoogle:hover{
     cursor: pointer;
     background-color: var(--hover-color);
     transform: scale(1.05, 1.05);
