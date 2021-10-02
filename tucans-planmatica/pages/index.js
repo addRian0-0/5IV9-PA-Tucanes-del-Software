@@ -3,7 +3,7 @@ import Image from 'next/image';
 import MainHead from '../components/MainHead';
 import LayoutIndex from '../components/LayoutIndex';
 import styles from "../styles/Home.module.css";
-import manzanilla from "../src/index_plant.png";
+
 export default function Index() {
   return (
     <div>
@@ -16,7 +16,7 @@ export default function Index() {
             </font>
             <center>
               <div className={styles.container_3}>
-                <h3>Bienvenido a PlantMatica, el sitio ideal para conocer más sobre herbolaria en México.<br />
+                <h3>Bienvenido a PlantMatica, un sitio ideal para conocer más sobre herbolaria en México.<br />
                   Haznos saber qué buscas y la información llegará volando.</h3>
                 <center>
                   <br />

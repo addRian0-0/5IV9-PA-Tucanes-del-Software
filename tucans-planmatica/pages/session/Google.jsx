@@ -13,6 +13,8 @@ export default function Google() {
 
     return (
         <div>
+
+            
             <button className={styles.btnGoogle} onClick={() => signIn()} >
                 <GoogleIcon /> Crear cuenta con Google
             </button>

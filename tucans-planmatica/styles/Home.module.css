@@ -170,16 +170,23 @@
 }
 
 .container_4 {
-  width: 50%;
+  width: 80%;
   min-width: 350px;
   display: flex;
   justify-content: space-between;
+  
+}
+
+.container_4 table{
+  text-align: center;
 }
 
 .btnSubmit {
   margin: 16px;
   margin-top: 15.8vh;
   border-radius: 4px;
+  width:20vw;
+  min-width: max-content;
   height: 35px;
   font-size: 18px;
   color: white;
