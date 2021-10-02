@@ -3,7 +3,7 @@ import styles from "../../styles/Forms.module.css";
 import TerminosYCondiciones from "../../components/TerminosYCondiciones";
 import MainHead from '../../components/MainHead';
 import LayoutIndex from '../../components/LayoutIndex';
-import Google from "../../components/Google";
+
 
 export default function CrearCuenta() {
 
@@ -14,7 +14,7 @@ export default function CrearCuenta() {
             <LayoutIndex>
                 
                 <form className={styles.root} >
-                    <Google/>
+                    
                     <h2 className={styles.title} > <a href="/">←</a> Crear cuenta</h2>
 
                     <div className={styles.cont_input}>
