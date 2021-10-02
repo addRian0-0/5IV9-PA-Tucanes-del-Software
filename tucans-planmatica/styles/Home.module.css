@@ -139,12 +139,18 @@
 }
 
 .container_0 {
+  background-image: linear-gradient(to top, rgba(240, 240, 240, 0.8) 0%, rgba(255, 255, 255, 0.825) 100%), url(../src/head_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   display: inline-flexbox;
 }
 
 .container_1 {
   width: 90%;
   margin: auto;
+<<<<<<< HEAD
 
 }
 
@@ -161,6 +167,53 @@
 }
 
 .aside_0{
+=======
+  text-align: center;
+}
+
+.container_2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container_2 table {
+  width: 100%;
+  text-align: center;
+}
+
+.container_3 {
+  width: 85%;
+  text-align: center;
+}
+
+.container_4 {
+  width: 50%;
+  min-width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnSubmit {
+  margin: 16px;
+  margin-top: 15.8vh;
+  border-radius: 4px;
+  height: 35px;
+  font-size: 18px;
+  color: white;
+  background-color: var(--main-color);
+  border: 0;
+  transition: 0.3s;
+}
+
+.btnSubmit:hover {
+  cursor: pointer;
+  background-color: var(--hover-color);
+  transform: scale(1.1, 1.1);
+}
+
+.aside_0 {
+>>>>>>> addRian
   width: 20%;
   border: 1px solid #000000;
   text-align: center;
@@ -168,8 +221,21 @@
 
 /*Contenido*/
 
+<<<<<<< HEAD
 .index_img{
   width: 50%;
+=======
+.cont_img {
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(50, 50, 50);
+}
+
+.index_img {
+  border-radius: 10px;
+  padding-left: 10px;
+  transition: 0.3s;
+>>>>>>> addRian
 }
 
 /*Footer*/
@@ -180,7 +246,11 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+<<<<<<< HEAD
   margin-top:35px;
+=======
+  margin-top: 32px;
+>>>>>>> addRian
   bottom: 0;
   width: 100%;
   box-shadow: 0px 0px 7px rgb(50, 50, 50);
