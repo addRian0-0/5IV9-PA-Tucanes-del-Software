@@ -22,13 +22,13 @@ export default function Index() {
           </font>
           <center>
             <div className={styles.container_3}>
-              <h3>Bienvenido a PlantMatica, el sitio ideal para conocer sobre herbolaria en México.<br/>
+              <h3>Bienvenido a PlantMatica, el sitio ideal para conocer más sobre herbolaria en México.<br/>
               Haznos saber qué buscas y la información llegará volando.</h3>
               <center>
               <br/>
               <div className={styles.container_4}>
                 <a href="CrearCuenta"><button className={styles.btnSubmit} type="submit">Crear Cuenta</button></a>
-                <button className={styles.btnSubmit} type="submit">Iniciar Sesión</button>
+                <a href="IniciarSesion"><button className={styles.btnSubmit} type="submit">Iniciar Sesión</button></a>
               </div>
               <br/>
               </center>

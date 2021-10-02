@@ -12,7 +12,7 @@ export default function LayoutIndex({ children }) {
             <div className={styles.container_0} style={{margin: '0', padding: '0'}} >
                 <font face="Work Sans" color="white">
                     <header className={styles.head_0}>
-                        <br/><Image src={logo_1_w} width={'200%'} height={'80%'}  />
+                        <a href="/"><br/><Image src={logo_1_w} width={'200%'} height={'80%'}  /></a>
                     </header>
                 </font>
                 { children }

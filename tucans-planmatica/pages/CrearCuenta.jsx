@@ -13,7 +13,7 @@ export default function CrearCuenta() {
             <MainHead tituloPestana="Crear Cuenta" />
             <LayoutIndex>
             <form className={styles.root} >
-                <h2 className={styles.title} > <a href="/">←</a> Crear cuenta</h2>
+                <h2 className={styles.title} >  Crear cuenta</h2>
 
                 <div className={styles.cont_input}>
                     <label className={styles.text} >Nombre de usuario</label>
@@ -83,7 +83,7 @@ export default function CrearCuenta() {
                 <div className={styles.cont_input} >
                     <label className={styles.text} >Edad</label>
                     <input type="text" className={styles.input} />
-                </div><br/>
+                </div>
                 <div style={{marginLeft: '30px'}}>
                     <center><TerminosYCondiciones /></center>
                 </div><br/>
