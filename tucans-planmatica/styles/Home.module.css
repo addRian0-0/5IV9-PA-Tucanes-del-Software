@@ -181,6 +181,7 @@
 
 .btnSubmit{
   margin: 16px;
+  margin-top: 15.8vh;
   border-radius: 4px;
   height: 35px;
   font-size: 18px;
@@ -215,7 +216,7 @@
 .index_img{
   border-radius: 10px;
   padding-left: 10px;
-  
+  transition: 0.3s;
 }
 
 /*Footer*/
