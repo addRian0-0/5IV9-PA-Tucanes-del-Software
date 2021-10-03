@@ -1,10 +1,10 @@
 # TUCANES DEL SOFTWARE 
 
-    Arce Roldán Sergio Elías
-    Castañeda Rodríguez Rafael Gil
-    Flores Zamora Ithan Adrián
-    Gutiérrez Villalobos José Alfredo
-    Nápoles Munguía José de Jesús
+- Arce Roldán Sergio Elías
+- Castañeda Rodríguez Rafael Gil
+- Flores Zamora Ithan Adrián
+- Gutiérrez Villalobos José Alfredo
+- Nápoles Munguía José de Jesús
 
 ## Requisitos de instalacion 
 
