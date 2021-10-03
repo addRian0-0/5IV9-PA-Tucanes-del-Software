@@ -1,5 +1,11 @@
 # TUCANES DEL SOFTWARE 
 
+- Arce Roldán Sergio Elías
+- Castañeda Rodríguez Rafael Gil
+- Flores Zamora Ithan Adrián
+- Gutiérrez Villalobos José Alfredo
+- Nápoles Munguía José de Jesús
+
 ## Requisitos de instalacion 
 
 - Node v14.17.4 o superior

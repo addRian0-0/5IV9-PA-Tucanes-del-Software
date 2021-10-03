@@ -3,7 +3,7 @@ import styles from "../../styles/Forms.module.css";
 import TerminosYCondiciones from "../../components/TerminosYCondiciones";
 import MainHead from '../../components/MainHead';
 import LayoutIndex from '../../components/LayoutIndex';
-import Google from "../../components/Google";
+import Link from 'next/link';
 
 export default function CrearCuenta() {
 
@@ -14,8 +14,8 @@ export default function CrearCuenta() {
             <LayoutIndex>
                 
                 <form className={styles.root} >
-                    <Google/>
-                    <h2 className={styles.title} > <a href="/">←</a> Crear cuenta</h2>
+                    
+                    <h2 className={styles.title} >Crear cuenta</h2>
 
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Nombre de usuario</label>
@@ -86,11 +86,12 @@ export default function CrearCuenta() {
                         <label className={styles.text} >Edad</label>
                         <input type="text" className={styles.input} />
                     </div><br/>
-                    <div style={{ marginLeft: '30px' }}>
+                    <div>
                         <center><TerminosYCondiciones /></center>
                     </div><br/>
+                    <Link href="/">
                     <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
-
+                    </Link>
                 </form>
             </LayoutIndex>
         </div>
