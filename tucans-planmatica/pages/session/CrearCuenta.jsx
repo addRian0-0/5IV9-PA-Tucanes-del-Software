@@ -86,7 +86,7 @@ export default function CrearCuenta() {
                         <label className={styles.text} >Edad</label>
                         <input type="text" className={styles.input} />
                     </div><br/>
-                    <div style={{ marginLeft: '30px' }}>
+                    <div>
                         <center><TerminosYCondiciones /></center>
                     </div><br/>
                     <Link href="/">
