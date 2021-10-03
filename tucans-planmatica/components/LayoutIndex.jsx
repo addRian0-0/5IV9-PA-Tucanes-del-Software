@@ -1,8 +1,8 @@
 import React from 'react';
-import MainHead from './MainHead';
+
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Link from 'next/link';
 import logo_1_w from "../src/logo_1_w.png";
 import git_logo from "../src/git_icon.png";
 
@@ -12,7 +12,7 @@ export default function LayoutIndex({ children }) {
             <div className={styles.container_0} style={{margin: '0', padding: '0'}} >
                 <font face="Work Sans" color="white">
                     <header className={styles.head_0}>
-                        <br/><Image src={logo_1_w} width={'200%'} height={'80%'}  />
+                        <br/><Link href="/"><Image src={logo_1_w} width={'200%'} height={'80%'}  /></Link>
                     </header>
                 </font>
                 { children }
