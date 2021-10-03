@@ -1,8 +1,7 @@
 import React from 'react';
-
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Link from 'next/link';
 import logo_1_w from "../src/logo_1_w.png";
 import git_logo from "../src/git_icon.png";
 
@@ -24,9 +23,11 @@ export default function LayoutIndex({ children }) {
                                     <a><h2>© 2021 Tucan's Software</h2></a>
                                 </td>
                                 <td className={styles.footy_t_2}>
-                                    <a href="https://github.com/addRian0-0/5IV9-PA-Tucanes-del-Software" target="_blank">
+                                    <Link href="https://github.com/addRian0-0/5IV9-PA-Tucanes-del-Software" passHref>
+                                        <a target="_blank">
                                         <Image src={git_logo} className={styles.git_logo} width={'50%'} height={'50%'}/>
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </td>
                             </tr>
                             </tbody></table>

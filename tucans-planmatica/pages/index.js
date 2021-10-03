@@ -22,8 +22,8 @@ export default function Index() {
                 <center>
                   <br />
                   <div className={styles.container_4}>
-                    <a href="./session/CrearCuenta"><button className={styles.btnSubmit} type="submit">Crear Cuenta</button></a>
-                    <a href="./session/IniciarSesion"><button className={styles.btnSubmit} type="submit">Iniciar Sesión</button></a>
+                    <Link href="./session/CrearCuenta"><button className={styles.btnSubmit} type="submit">Crear Cuenta</button></Link>
+                    <Link href="./session/IniciarSesion"><button className={styles.btnSubmit} type="submit">Iniciar Sesión</button></Link>
                   </div>
                   <br />
                 </center>
