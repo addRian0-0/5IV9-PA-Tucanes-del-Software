@@ -1,10 +1,5 @@
 # TUCANES DEL SOFTWARE 
 
-- Arce Roldán Sergio Elías
-- Castañeda Rodríguez Rafael Gil
-- Flores Zamora Ithan Adrián
-- Gutiérrez Villalobos José Alfredo
-- Nápoles Munguía José de Jesús
 
 ## Requisitos de instalacion 
 
@@ -22,4 +17,10 @@
 Este ultimo comando iniciara un servidor en modo desarrollo en el puerto 3000.
 
 Para finalizar se debe ingresar a http://localhost:3000
- 
+----
+### Integrantes de proyecto
+- Arce Roldán Sergio Elías
+- Castañeda Rodríguez Rafael Gil
+- Flores Zamora Ithan Adrián
+- Gutiérrez Villalobos José Alfredo
+- Nápoles Munguía José de Jesús
