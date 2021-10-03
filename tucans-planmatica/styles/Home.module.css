@@ -90,6 +90,7 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  position: sticky;
   height: max-content;
   align-items: center;
   display: flex;
@@ -144,7 +145,7 @@
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-
+  height:100%;
   display: inline-flexbox;
 }
 
@@ -237,6 +238,7 @@
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 32px;
+  position:relative;
   bottom: 0;
   width: 100%;
   box-shadow: 0px 0px 7px rgb(50, 50, 50);
