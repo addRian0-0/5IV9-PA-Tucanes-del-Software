@@ -225,6 +225,12 @@
 
 /*Lateral*/
 
+.t_plantmatica{
+  color: rgb(238,238,238);
+}
+
+
+
 .lateral{
   background-image: linear-gradient(to top, rgba(65, 180, 65, 0.8) 0%, rgba(15, 100, 15, 0.825) 100%), url(../src/head_bg.jpg);
   background-size: cover;
@@ -249,16 +255,16 @@
   background-attachment: fixed;
   background-position: center;
 
-  margin-top: 1vh;
+  margin-top: 1.5vh;
   border-radius: 4px;
   width:10vw;
   min-width: max-content;
-  height:12.5vh;
+  height:10vh;
   font-size: 18px;
   color: white;
   
   border: 0;
-  transition: 0.25s ease-out;
+  transition: 0.3s ;
 }
 
 .pages:hover {
