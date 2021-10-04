@@ -6,7 +6,8 @@ import Link from 'next/link';
 export default function IniciarSesion() {
     return (
         <div>
-            <MainHead title="Iniciar Sesion" />
+            
+            <MainHead tituloPestana="Iniciar Sesion" />
             <LayoutIndex>
             <form className={styles.root} >
                 <center><h2 className={styles.title} >Iniciar Sesion</h2></center>
