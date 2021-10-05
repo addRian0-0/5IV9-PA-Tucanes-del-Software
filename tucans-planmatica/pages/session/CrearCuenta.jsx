@@ -4,40 +4,91 @@ import TerminosYCondiciones from "../../components/TerminosYCondiciones";
 import MainHead from '../../components/MainHead';
 import LayoutIndex from '../../components/LayoutIndex';
 import Link from 'next/link';
+import Router from "next/router";
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import { schemaCrearCuenta } from "../../schemas/crearCuenta";
+import swal from "sweetalert";
 
 export default function CrearCuenta() {
+
+    const { register, handleSubmit, formState: { errors } } = useForm({
+        resolver: yupResolver(schemaCrearCuenta)
+    });
+    const onSubmit = async (data) => {
+        const res = await fetch(`http://localhost:8080/user`, {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: data.username,
+                correo: data.correo,
+                password: data.password,
+                estadoMx: data.estadoMx,
+                sexo: data.sexo,
+                edad: data.edad
+            })
+        });
+        const resJSON = await res.json();
+        if (resJSON.errors) {
+            let arrayErrors = resJSON.errors;
+            arrayErrors.forEach(e => {
+                swal({
+                    title: 'Error al crear cuenta',
+                    text: e.msg,
+                    icon: 'error',
+                    button: 'Ok',
+                })
+            });
+        } else {
+            swal({
+                title: 'Finalizado',
+                text: resJSON.msg,
+                icon: 'success',
+                button: 'Ok',
+                timer: '3000'
+            });
+            Router.push('/session/IniciarSesion');
+        }
+    }
 
     return (
 
         <div>
             <MainHead tituloPestana="Crear Cuenta" />
             <LayoutIndex>
-                
-                <form className={styles.root} >
-                    
+
+                <form onSubmit={handleSubmit(onSubmit)} className={styles.root} >
+
                     <h2 className={styles.title} >Crear cuenta</h2>
 
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Nombre de usuario</label>
-                        <input className={styles.input} />
+                        <input {...register('username')} className={styles.input} />
+                        <p className={styles.errors} >{errors.username?.message}</p>
                     </div>
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Correo</label>
-                        <input className={styles.input} />
+                        <input {...register('correo')} className={styles.input} />
+                        <p className={styles.errors} >{errors.correo?.message}</p>
                     </div>
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Contraseña</label>
-                        <input type="password" className={styles.input} />
+                        <input {...register('password')} type="password" className={styles.input} />
+                        <p className={styles.errors} >{errors.password?.message}</p>
                     </div>
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Verificar contraseña</label>
-                        <input type="password" className={styles.input} />
+                        <input {...register('passwordV')} type="password" className={styles.input} />
+                        <p className={styles.errors} >{errors.passwordV?.message}</p>
                     </div>
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Estado de la republica</label>
-                        <select className={styles.input} name="estado">
+                        <select {...register('estadoMx')} className={styles.input} name="estado">
                             <option value="no">Seleccione uno...</option>
-                            <option value="no">Resido fuera del pais</option>
+                            <option value="Resido fuera del pais">Resido fuera del pais</option>
                             <option value="Aguascalientes">Aguascalientes</option>
                             <option value="Baja California">Baja California</option>
                             <option value="Baja California Sur">Baja California Sur</option>
@@ -75,7 +126,7 @@ export default function CrearCuenta() {
 
                     <div className={styles.cont_input}>
                         <label className={styles.text} >Sexo</label>
-                        <select className={styles.input} name="sexo">
+                        <select {...register('sexo')} className={styles.input} name="sexo">
                             <option value="Masculino" >Masculino</option>
                             <option value="Femenino" >Femenino</option>
                             <option value="Prefiero no decirlo">Prefiero no decirlo</option>
@@ -84,14 +135,13 @@ export default function CrearCuenta() {
 
                     <div className={styles.cont_input} >
                         <label className={styles.text} >Edad</label>
-                        <input type="text" className={styles.input} />
-                    </div><br/>
+                        <input {...register('edad')} type="text" className={styles.input} />
+                        <p className={styles.errors} >{errors.edad ? "Dato no valido" : ""}</p>
+                    </div><br />
                     <div>
                         <center><TerminosYCondiciones /></center>
-                    </div><br/>
-                    <Link href="/">
-                    <button className={styles.btnSubmit} type="submit">Crear Cuenta</button>
-                    </Link>
+                    </div><br />
+                    <button type="submit" className={styles.btnSubmit} type="submit">Crear Cuenta</button>
                 </form>
             </LayoutIndex>
         </div>
