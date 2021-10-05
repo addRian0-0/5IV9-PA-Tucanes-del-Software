@@ -18,7 +18,7 @@ export default function Lateral(){
     return(
 
         <div>
-            <MainHead/>
+            
             <font face="Work Sans" color="white">
             <div className={styles.lateral}>
                 
