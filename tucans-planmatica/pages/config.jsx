@@ -1,9 +1,9 @@
 import React from 'react'
 import MainHead from '../components/MainHead';
-import LayoutIndex from '../components/Lateral';
+
 import Lateral from '../components/Lateral';
 import styles from "../styles/Home.module.css";
-import appContainer from '../components/AppContainer';
+
 export default function MiCuenta(){
 
     return(
