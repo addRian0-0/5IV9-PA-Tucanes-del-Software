@@ -18,12 +18,12 @@ export default function Lateral(){
     return(
 
         <div>
-            
+            <MainHead/>
             <font face="Work Sans" color="white">
             <div className={styles.lateral}>
                 
                 <div className={styles.lateral_logo}>
-                <Image src={logo_1_w} width={'220%'} height={'87%'}  /><br/>
+                <Image src={logo_1_w} width={'220vw'} height={'87vw'}  /><br/>
                 <h2 className={styles.t_plantmatica}>PlantMatica</h2>
                 <Link href="menu"><button className={styles.pages}>Inicio</button></Link><br/>
                 <Link href="cuenta"><button className={styles.pages}>Mi Cuenta</button></Link><br/>
@@ -39,6 +39,7 @@ export default function Lateral(){
 
                 </div>
             </div>
+            
             </font>
         </div>
     )
