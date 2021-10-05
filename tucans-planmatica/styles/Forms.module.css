@@ -67,3 +67,7 @@
     background-color: var(--hover-color);
     transform: scale(1.05, 1.05);
 }
+
+.errors{
+    color: red;
+}

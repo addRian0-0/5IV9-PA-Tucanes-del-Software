@@ -11,13 +11,20 @@
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@hookform/resolvers": "^2.8.1",
     "@mui/icons-material": "^5.0.1",
     "@mui/material": "^5.0.2",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.1.1",
+    "mongodb": "^4.1.2",
     "next": "11.1.2",
     "next-auth": "^3.29.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.17.0",
+    "swal": "^0.1.0",
+    "sweetalert": "^2.1.2",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "eslint": "7.32.0",
