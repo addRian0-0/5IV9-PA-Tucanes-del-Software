@@ -11,7 +11,7 @@ export default function MainHead(props) {
                 <title> {props.tituloPestana} </title>
                 <link rel="shortcut icon" href={props.icon} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+                <link rel="preconnect" href="https://fonts.gstatic.com" />
                 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;1,300&display=swap" rel="stylesheet"></link>
             </Head>
         </div>
