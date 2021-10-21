@@ -266,18 +266,24 @@
   border-radius: 4px;
   width:20vw;
   min-width: max-content;
-  height: 35px;
+  height: 75px;
   font-size: 18px;
   color: white;
   background-color: var(--main-color);
   border: 0;
   transition: 0.3s;
+
 }
 
 .btnSubmit:hover {
   cursor: pointer;
-  background-color: var(--hover-color);
+  background-image: linear-gradient(to top, rgba(65, 180, 65, 0.8) 0%, rgba(15, 100, 15, 0.825) 100%), url(../src/head_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   transform: scale(1.1, 1.1);
+
 }
 
 .aside_0 {
