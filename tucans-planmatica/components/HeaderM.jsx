@@ -49,23 +49,3 @@ export default function menusup(){
     )
 
 }
-/*
-
-            <div className={styles.lateral_logo}>
-            <Image src={logo_1_w} width={'220vw'} height={'87vw'}  /><br/>
-            <h2 className={styles.t_plantmatica}>PlantMatica</h2>
-            <Link href="menu"><button className={styles.pages}>Inicio</button></Link><br/>
-            <Link href="cuenta"><button className={styles.pages}>Mi Cuenta</button></Link><br/>
-            <Link href="config"><button className={styles.pages}>Configuración</button></Link><br/>
-            <a href="/"><button className={styles.pages} onClick={handleToggle}>Cerrar Sesión</button></a><br/>
-            <Backdrop
-            sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
-            open={open}
-            onClick={handleClose}
-            >
-                <CircularProgress color="inherit" />
-            </Backdrop>
-
-            </div>
-
-*/
