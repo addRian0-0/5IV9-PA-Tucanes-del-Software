@@ -2,7 +2,6 @@ import React from 'react'
 import styles from "../styles/Fichas.module.css";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
@@ -10,21 +9,44 @@ import Paper from '@mui/material/Paper';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import Link from "next/link";
+import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
+import Autocomplete from '@mui/material/Autocomplete';
 
 export default function MostrarFicha() {
     return (
         <div className={styles.tableFichas}>
+
             <TableContainer component={Paper}>
-                <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                <Table sx={{ minWidth: 650, margin: '20px', maxWidth: '95%' }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
-                            <h2 className={styles.titleficha} >Termino de busqueda: {`(AQUI)`}</h2>
+                            <Stack spacing={2} >
+                                <Autocomplete
+                                    freeSolo
+                                    id="free-solo-2-demo"
+                                    disableClearable
+                                    options={top100Films.map((option) => option.title)}
+                                    renderInput={(params) => (
+                                        <TextField color="success"
+                                            {...params}
+                                            label="Buscar plantas"
+                                            InputProps={{
+                                                ...params.InputProps,
+                                                type: 'search',
+                                            }}
+                                        />
+                                    )}
+                                />
+                            </Stack>
+                        </TableRow>
+                        <TableRow>
+                            <h2 sx={{ padding: '15px' }} className={styles.titleficha} >Termino de busqueda: {`(AQUI)`}</h2>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        <Card >
+                        <Card sx={{ padding: '15px' }} >
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
@@ -38,7 +60,7 @@ export default function MostrarFicha() {
                                 <button className={styles.btnLinkFicha} >Mas informacion</button>
                             </CardActions>
                         </Card>
-                        <Card >
+                        <Card sx={{ padding: '15px' }}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
@@ -53,7 +75,11 @@ export default function MostrarFicha() {
                                 <p className={styles.textFich} >{`Hierba bienal o perenne, esparcidamente ramificada, sin pelos.Mide de 30 cm a 1 m de alto.Tiene un tallo estriado longitudinalmente,  sus hojas son, de 3 a 25 cm de largo, compuestas con pocos foliolos (pinnadas), peciolos de base envainante, los foliolos son ovados u obovados, cuneados en la base, de 2 a 6 cm de largo por 1 a 5 cm de ancho, margen profundamente lobado o dentado; las hojas superiores más pequeñas que las inferiores y cortamente pecioladas o subsésiles...`}</p>
                             </CardContent>
                             <CardActions>
-                                <button className={styles.btnLinkFicha} >Mas informacion</button>
+                                <Link href="/fichas/ficha">
+                                    <a>
+                                        <button className={styles.btnLinkFicha} >Mas informacion</button>
+                                    </a>
+                                </Link>
                             </CardActions>
                         </Card>
 
@@ -63,3 +89,10 @@ export default function MostrarFicha() {
         </div>
     )
 }
+
+// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top
+const top100Films = [
+    { title: 'apio' },
+    { title: 'dolor estomacal' },
+    { title: 'enfermedades respiratorias' }
+];

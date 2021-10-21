@@ -68,6 +68,7 @@ export default function IniciarSesion() {
 
             <MainHead tituloPestana="Iniciar Sesion" />
             <LayoutIndex>
+
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.root} >
                     <center><h2 className={styles.title} >Iniciar Sesion</h2></center>
                     <br /><br />
@@ -82,7 +83,9 @@ export default function IniciarSesion() {
                         <p className={styles.errors} >{errors.password?.message}</p>
                     </div><br /><br />
                     <button className={styles.btnSubmit} type="submit">Iniciar Sesion</button>
-
+                    <center className={styles.link}>
+                        Si no posees una cuenta puedes crear una haciendo click aqui.
+                    </center>
                 </form>
             </LayoutIndex>
         </div>

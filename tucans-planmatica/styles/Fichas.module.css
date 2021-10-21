@@ -1,7 +1,4 @@
 .tableFichas{
-    max-width: 60%;
-    margin: 32px;
-    max-height: 800px;
     overflow-y: auto;
 }
 
@@ -40,8 +37,8 @@
     border: 1px solid var(--main-color);
     border-radius: 4px;
     background-color: white;
-    padding: 10px;
-    font-size: 16px;
+    padding: 12px;
+    font-size: 18px;
 }
 
 .btnLinkFicha:hover{
@@ -109,6 +106,22 @@
     color: white;
 }
 
+.btnCalificar{
+    padding: 12px;
+    margin: 8px;
+    font-size: 18px;
+    color: var(--purple-color);
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid var(--purple-color);
+    transition: 0.3s;
+}
+
+.btnCalificar:hover{
+    transform: scale(1.05, 1.05);
+    background-color: var(--purple-color);
+    color: white;
+}
 
 .division{
     color: var(--hover-secondary-color);

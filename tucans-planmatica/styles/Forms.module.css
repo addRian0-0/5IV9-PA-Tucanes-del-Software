@@ -71,3 +71,13 @@
 .errors{
     color: red;
 }
+
+.link{
+    color: black;
+    transition: 0.3s;
+}
+
+.link:hover{
+    color: var(--hover-color);
+    transform: scale(1.05, 1.05);
+}
