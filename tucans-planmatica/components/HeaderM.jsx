@@ -9,21 +9,15 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 export default function menusup(){
 
-    const [open, setOpen] = React.useState(false);
+    /*const [open, setOpen] = React.useState(false);
     const handleClose = () => {
         setOpen(false);
     };
     const handleToggle = () => {
         setOpen(!open);
-    };
+    };*/
 
-
-    return(
-
-        <div>
-        <MainHead tituloPestana="Inicio"/>    
-        <font face="Work Sans" color="white">
-        <div className={styles.head}>
+    /*
             <div>
             <br/><Link href="menu"><Image src={logo_1_w} width={'188%'} height={'70%'}  /></Link>
             </div>
@@ -40,6 +34,15 @@ export default function menusup(){
                     <CircularProgress color="inherit" />
                 </Backdrop>
             </div>
+    */
+
+    return(
+
+        <div>
+        <MainHead tituloPestana="Inicio"/>    
+        <font face="Work Sans" color="white">
+        <div className={styles.head}>
+            
 
         </div>
         
