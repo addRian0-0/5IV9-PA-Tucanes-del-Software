@@ -5,6 +5,9 @@ body {
   --main-color: #0E7B43;
   --hover-color: rgb(34, 119, 85);
   --hover-secondary-color: rgba(53, 114, 102, 0.2);
+  --danger-color: rgb(216, 24, 24);
+  --bg-color-lg: #e6fada;
+  --save-color: rgb(98, 98, 236);
   padding: 0;
   margin: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

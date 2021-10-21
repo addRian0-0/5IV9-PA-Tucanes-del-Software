@@ -37,7 +37,7 @@
 .btnLinkFicha{
     color: var(--main-color);
     transition: 0.3s;
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 4px;
     background-color: white;
     padding: 10px;
@@ -50,3 +50,115 @@
     transform: scale(1.05, 1.05);
 }
 
+
+/* Ficha unica, mostrar una unica ficha pues  */
+
+.containerFicha{
+    margin: 32px;
+    background-color: var(--bg-color-lg);
+}
+
+.btnguardar{
+    padding: 12px;
+    margin: 8px;
+    font-size: 18px;
+    color: var(--save-color);
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid var(--save-color);
+    transition: 0.3s;
+}
+
+.btnguardar:hover{
+  transform: scale(1.05, 1.05);
+  background-color: var(--save-color);
+  color: white;
+}
+
+.btnReporte{
+    padding: 12px;
+    margin: 8px;
+    font-size: 18px;
+    color: var(--danger-color);
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid var(--danger-color);
+    transition: 0.3s;
+}
+
+.btnReporte:hover{
+    transform: scale(1.05, 1.05);
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btnSolicitud{
+    padding: 12px;
+    margin: 8px;
+    font-size: 18px;
+    color: var(--main-color);
+    border-radius: 4px;
+    background-color: white;
+    border: 1px solid var(--main-color);
+    transition: 0.3s;
+}
+
+.btnSolicitud:hover{
+    transform: scale(1.05, 1.05);
+    background-color: var(--hover-color);
+    color: white;
+}
+
+
+.division{
+    color: var(--hover-secondary-color);
+}
+
+.titlefichaU{
+    color: rgb(12, 82, 12);
+    font-size: 24px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.textU{
+    font-size: 24px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.titlefichaU2{
+    color: rgb(12, 82, 12);
+    font-size: 20px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.textU2{
+    font-size: 20px;
+    display: inline-block;
+    line-height: 24px;
+    margin: 5px;
+}
+
+.textD{
+    color: rgb(12, 82, 12);
+    font-size: 20px;
+    margin: 5px;
+}
+
+.lista{
+    font-size: 20px;
+}
+
+.fuentes{
+    border-radius: 4px;
+    padding: 16px;
+    color: rgb(76, 76, 233);
+    font-size: 18px;
+}
+
+.links{
+    list-style: none;
+    list-style-type: none;
+}
