@@ -1,7 +1,4 @@
 .tableFichas{
-    max-width: 60%;
-    margin: 32px;
-    max-height: 800px;
     overflow-y: auto;
 }
 
