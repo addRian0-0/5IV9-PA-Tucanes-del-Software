@@ -1,3 +1,52 @@
 .tableFichas{
-    border: 2px var(--main-color) solid;
+    max-width: 60%;
+    margin: 32px;
+    max-height: 800px;
+    overflow-y: auto;
 }
+
+.titleficha{
+    color: var(--hover-color);
+    font-size: 26px;
+}
+
+.nombreC{
+    color: var(--main-color);
+    font-size: 22px;
+}
+
+.textFich{
+    font-size: 18px;
+}
+
+.etiquetas{
+    display: inline-block;
+    color: var(--main-color);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.etiquetas:hover{
+    transform: scale(1.05, 1.05);
+    background-color: var(--hover-color);
+    color: white;
+}
+
+.btnLinkFicha{
+    color: var(--main-color);
+    transition: 0.3s;
+    border: 2px solid var(--main-color);
+    border-radius: 4px;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btnLinkFicha:hover{
+    background-color: var(--hover-color);
+    color: white;
+    transform: scale(1.05, 1.05);
+}
+
