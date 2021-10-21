@@ -15,7 +15,10 @@ import Button from '@mui/material/Button';
 
 export default function MostrarFicha() {
     return (
-        <div className={styles.tableFichas}>
+        <div>
+            
+        
+            <div className={styles.tableFichas}>
             <TableContainer component={Paper}>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
@@ -60,6 +63,7 @@ export default function MostrarFicha() {
                     </TableBody>
                 </Table>
             </TableContainer>
+        </div>
         </div>
     )
 }
