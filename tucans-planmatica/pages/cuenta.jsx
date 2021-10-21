@@ -8,6 +8,7 @@ export default function MiCuenta(){
     return(
         <div>
         <MainHead tituloPestana="Mi Cuenta" />
+        <Menusup/>
         <div className={styles.container0}>
                 
             </div>

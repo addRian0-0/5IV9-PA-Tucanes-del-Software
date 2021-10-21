@@ -9,6 +9,7 @@ export default function MiCuenta(){
     return(
         <div >
         <MainHead tituloPestana="Configuración" />
+        <Menusup/>
             <div className={styles.container0}>
                 
             </div>
