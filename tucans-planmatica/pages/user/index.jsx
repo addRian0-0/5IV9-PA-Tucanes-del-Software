@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import EditarUsuario from '../../components/EditarUsuario.test'
 import VisualizarUsuario from '../../components/VisualizarUsuario.test'
+import LayoutMenu from "../../components/LayoutMenu";
 
 export default function index() {
     
@@ -12,10 +13,10 @@ export default function index() {
     }
 
     return (
-        <div>
+        <LayoutMenu>
             {
                 verUsuario ? <VisualizarUsuario evtBtn={cambiarEstado } /> : <EditarUsuario evtBtn={cambiarEstado }/>
             }
-        </div>
+        </LayoutMenu>
     )
 }

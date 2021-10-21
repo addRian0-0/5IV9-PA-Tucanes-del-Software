@@ -99,6 +99,7 @@ export default function FichaUnica() {
                     </Box>
                 </CardContent>
                 <CardActions>
+                    <button className={styles.btnCalificar} >Calificar ficha</button>
                     <button className={styles.btnSolicitud} >Solicitud de edicion</button>
                     <button className={styles.btnReporte} >Reportar ficha</button>
                     <button className={styles.btnguardar} >Guardar ficha</button>
