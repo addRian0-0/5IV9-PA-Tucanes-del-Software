@@ -9,24 +9,8 @@ export default function MiCuenta(){
     return(
         <div >
         <MainHead tituloPestana="Configuración" />
-            <div className={styles.fullContainer}>
-                <div>
-                <Lateral/>
-                </div>
-
-                <div className={styles.appContainer}>
+            <div className={styles.container0}>
                 
-                <div className={styles.head_Page}>
-                <font face="Work Sans" color="white">
-                    <h3>× Configuración</h3>
-                </font>
-                </div>
-                <div className={styles.finalC}>
-                    Ola
-                </div>
-
-
-                </div>
             </div>
         </div>
 
