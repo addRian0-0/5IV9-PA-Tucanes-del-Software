@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .head{
     background-image: linear-gradient(to top, rgba(66, 167, 66, 0.9) 0%, rgba(25, 110, 25, 0.9) 100%), url(../src/head_bg.jpg);
     background-size: cover;
@@ -9,8 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
-=======
+}
 .head {
     background-image: linear-gradient(to top, rgba(66, 167, 66, 0.9) 0%, rgba(25, 110, 25, 0.9) 100%), url(../src/head_bg.jpg);
     background-size: cover;
@@ -67,5 +65,4 @@
     margin-left: 20px;
     cursor: pointer;
     background-color: var(--hover-color);
->>>>>>> addRian
 }
