@@ -27,7 +27,7 @@ export default function menusup({ children }) {
                 <font face="Work Sans" color="white">
                     <div className={styles.head}>
                         <div>
-                            <br /><Link href="menu"><Image src={logo_1_w} width={'188%'} height={'70%'} /></Link>
+                            <br/><Link href="menu"><Image src={logo_1_w} width={'188%'} height={'70%'} /></Link>
                         </div>
                         <div className={styles.botonera}>
                             <Link href="/fichas">
@@ -51,7 +51,7 @@ export default function menusup({ children }) {
                                     </button>
                                 </a>
                             </Link>
-                            <Link href="#">
+                            <Link href="/">
                                 <a>
                                     <button className={styles.menuButton} onClick={handleToggle}>
                                         <font face="Work Sans" color="white"><h3>Cerrar Sesión</h3></font>
