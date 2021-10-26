@@ -7,8 +7,10 @@ import MostrarFicha from '../../components/MostrarFicha';
 
 export default function Index() {
     return (
-        <LayoutMenu> 
+        <div>
+            <LayoutMenu> 
             <MostrarFicha/>
-        </LayoutMenu>
+            </LayoutMenu>
+        </div>
     )
 }
