@@ -14,7 +14,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Slider from '@mui/material/Slider';
-
+import Link from 'next/link';
 function valuetext(value) {
     return `${value}°C`;
 }
@@ -100,7 +100,7 @@ export default function FichaUnica() {
                 </CardContent>
                 <CardActions>
                     <button className={styles.btnCalificar} >Calificar ficha</button>
-                    <button className={styles.btnSolicitud} >Solicitud de edicion</button>
+                    <Link href="editar"><button className={styles.btnSolicitud} >Solicitud de edicion</button></Link>
                     <button className={styles.btnReporte} >Reportar ficha</button>
                     <button className={styles.btnguardar} >Guardar ficha</button>
                 </CardActions>

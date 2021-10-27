@@ -14,57 +14,22 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function MostrarFicha() {
+export default function editarPlanta() {
     return (
         <div className={styles.tableFichas}>
-
+            
+            
             <TableContainer component={Paper} className={styles.fondo}>
                 <Table sx={{ minWidth: 650, margin: '20px', maxWidth: '95%' }} aria-label="simple table">
                     <TableHead>
-                        <TableRow>
-                            <Stack spacing={2} >
-                                <Autocomplete
-                                    freeSolo
-                                    id="free-solo-2-demo"
-                                    disableClearable
-                                    options={top100Films.map((option) => option.title)}
-                                    renderInput={(params) => (
-                                        <TextField color="success"
-                                            {...params}
-                                            label="Buscar plantas"
-                                            InputProps={{
-                                                ...params.InputProps,
-                                                type: 'search',
-                                            }}
-                                        />
-                                    )}
-                                />
-                            </Stack>
-                        </TableRow>
-                        <TableRow>
-                            <h2 sx={{ padding: '15px' }} className={styles.titleficha} >Termino de busqueda: {`(AQUI)`}</h2>
-                        </TableRow>
+                    <h2 sx={{ padding: '15px' }} className={styles.titleficha} >Solicitud de Edición de {`(AQUI)`}</h2>
                     </TableHead>
                     <TableBody>
                         <Card sx={{ padding: '15px' }} className={styles.card}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
-                                    <p className={styles.etiquetas} > {`Aqui vienen las etiquetas`} </p>
-                                </div>
-                                <p className={styles.titleficha} >{`Nombre comun`}</p>
-                                <p className={styles.nombreC} >{`Nombre cientifico`}</p>
-                                <p className={styles.textFich} >{`Descripcion`}</p>
-                            </CardContent>
-                            <CardActions>
-                                <button className={styles.btnLinkFicha} >Mas informacion</button>
-                            </CardActions>
-                        </Card>
-                        <Card sx={{ padding: '15px' }} className={styles.card}>
-                            <CardContent>
-                                <div>
-                                    <p className={styles.textFich} >Etiquetas: </p>
-                                    <p className={styles.etiquetas} > {`apio`} </p>
+                                    <input type={'text'} placeholder={'apio'}/>
                                     <p className={styles.etiquetas} > {`comestible`} </p>
                                     <p className={styles.etiquetas} > {`malestar estomacal`} </p>
                                     <p className={styles.etiquetas} > {`enfermedades respiratorias`} </p>
