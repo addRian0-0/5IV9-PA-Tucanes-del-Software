@@ -64,21 +64,20 @@ export default function FichaUnica() {
                         Tallos y hojas crudos o cocinados
                     </p>
 
-                    <li className={styles.lista}>
-                        <ul>Desordenes ginecologicos (regla atrasada).</ul>
-                        <ul>Curar abscesos en mujeres.</ul>
-                        <ul>Transtornosa digestivos como vomito, empacho, enlechado de ninos.</ul>
-                        <ul>Disminuir la produccion de leche</ul>
-                        <ul>Contra el dolor de rinon, vejiga y retencion de orina.</ul>
-                        <ul>Utilizado para el dolor de cabeza</ul>
-                        <ul>Enfermedades respiratorias.</ul>
-                    </li>
+                    <   li className={styles.lista}>Desordenes ginecologicos (regla atrasada).</li>
+                        <li className={styles.lista}>Curar abscesos en mujeres.</li>
+                        <li className={styles.lista}>Transtornosa digestivos como vomito, empacho, enlechado de ninos.</li>
+                        <li className={styles.lista}>Disminuir la produccion de leche</li>
+                        <li className={styles.lista}>Contra el dolor de rinon, vejiga y retencion de orina.</li>
+                        <li className={styles.lista}>Utilizado para el dolor de cabeza</li>
+                        <li className={styles.lista}>Enfermedades respiratorias.</li>
+
                     <hr className={styles.division} />
 
                     <div className={styles.fuentes}>
                         <p>Fuentes:</p>
                         <li>
-                            <ul className={styles.links}>Rzedowski, G. C. de y J. Rzedowski, 2001. Flora fanerogámica del Valle de México. 2a ed. Instituto de Ecología y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. Pátzcuaro, Michoacán, México.</ul>
+                            Rzedowski, G. C. de y J. Rzedowski, 2001. Flora fanerogámica del Valle de México. 2a ed. Instituto de Ecología y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. Pátzcuaro, Michoacán, México.
                         </li>
                     </div>
                     <hr className={styles.division} />

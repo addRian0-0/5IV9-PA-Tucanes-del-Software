@@ -188,3 +188,84 @@
     list-style: none;
     list-style-type: none;
 }
+
+/* Campos de texto */
+
+.txtEtiquetas{
+    background-color: #f5f0f5;
+    border: none;
+    width: 50%;
+    height: 26px;
+    resize: none;
+    padding: 5px;
+    transition:0.3s;
+}
+
+    .txtEtiquetas:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtEtiquetas:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtEtiquetas:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+.txtNombres{
+    background-color: #f5f0f5;
+    border: none;
+    width: 10%;
+    min-width: max-content;
+    height: 25px;
+    resize: none;
+    padding: 5px;
+    transition:0.3s;
+}
+
+    .txtNombres:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtNombres:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtNombres:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+.txtBody{
+    background-color: #f5f0f5;
+    border: none;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+    transition:0.3s;    
+}
+
+    .txtBody:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtBody:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtBody:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
