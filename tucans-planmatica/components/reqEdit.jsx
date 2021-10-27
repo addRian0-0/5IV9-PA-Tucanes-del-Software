@@ -31,10 +31,10 @@ export default function FichaUnica() {
                     <textarea className={styles.txtNombres}>Apio</textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU}>Nombre cientifico: </p>
-                    <p className={styles.titlefichaU}>Apium graveolens</p>
+                    <textarea className={styles.txtNombres}>Apium graveolens</textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU2}>Origen y distribucion: </p>
-                    <p className={styles.titlefichaU2}>Originaria de Japon, Indonesia, Vietnam.</p>
+                    <textarea className={styles.txtEtiquetas}>Originaria de Japon, Indonesia, Vietnam.</textarea>
                     <hr className={styles.division} />
                     <p className={styles.textD} >Descripcion: </p>
                     <textarea className={styles.txtBody} >
@@ -44,7 +44,7 @@ export default function FichaUnica() {
                     </textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU2}>Caracteristicas especiales: </p>
-                    <p className={styles.titlefichaU2}> Planta aromática.</p>
+                    <textarea className={styles.txtNombres}> Planta aromática.</textarea>
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Alternativa y complementos a: </p>
                     <p className={styles.textU2}>
@@ -59,7 +59,7 @@ export default function FichaUnica() {
                         Aromatica
                         Tallos y hojas crudos o cocinados
                     </p>
-
+                        
                         <li className={styles.lista}>Desordenes ginecologicos (regla atrasada).</li>
                         <li className={styles.lista}>Curar abscesos en mujeres.</li>
                         <li className={styles.lista}>Transtornosa digestivos como vomito, empacho, enlechado de ninos.</li>

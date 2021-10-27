@@ -174,6 +174,7 @@
 }
 
 .lista{
+    padding-left: 35px;
     font-size: 20px;
 }
 
@@ -192,13 +193,14 @@
 /* Campos de texto */
 
 .txtEtiquetas{
+    margin-top: 5px;
     background-color: #f5f0f5;
     border: none;
     width: 50%;
     height: 26px;
     resize: none;
     padding: 5px;
-    transition:0.3s;
+    transition:0.2s;
 }
 
     .txtEtiquetas:hover{
@@ -218,6 +220,7 @@
     }
 
 .txtNombres{
+    margin-top: 5px;
     background-color: #f5f0f5;
     border: none;
     width: 10%;
@@ -225,7 +228,7 @@
     height: 25px;
     resize: none;
     padding: 5px;
-    transition:0.3s;
+    transition:0.2s;
 }
 
     .txtNombres:hover{
@@ -245,13 +248,14 @@
     }
 
 .txtBody{
+    margin-top: 5px;
     background-color: #f5f0f5;
     border: none;
     width: 100%;
     height: 150px;
     resize: none;
     padding: 5px;
-    transition:0.3s;    
+    transition:0.2s;    
 }
 
     .txtBody:hover{
