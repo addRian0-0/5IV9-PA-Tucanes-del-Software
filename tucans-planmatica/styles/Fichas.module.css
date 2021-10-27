@@ -194,7 +194,7 @@
 
 .txtEtiquetas{
     margin-top: 5px;
-    background-color: #f5f0f5;
+    background-color: #f0f0f0;
     border: none;
     width: 50%;
     height: 26px;
@@ -221,7 +221,7 @@
 
 .txtNombres{
     margin-top: 5px;
-    background-color: #f5f0f5;
+    background-color: #f0f0f0;
     border: none;
     width: 10%;
     min-width: max-content;
@@ -249,7 +249,7 @@
 
 .txtBody{
     margin-top: 5px;
-    background-color: #f5f0f5;
+    background-color: #f0f0f0;
     border: none;
     width: 100%;
     height: 150px;
@@ -273,3 +273,31 @@
         border-radius: 10px;
         border:1px rgb(0, 0, 0)
     }
+
+.txtRef{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 75%;
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    transition:0.2s;    
+}
+
+    .txtRef:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtRef:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtRef:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+    

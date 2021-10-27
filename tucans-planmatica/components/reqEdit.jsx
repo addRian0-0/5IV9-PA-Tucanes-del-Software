@@ -47,10 +47,10 @@ export default function FichaUnica() {
                     <textarea className={styles.txtNombres}> Planta aromática.</textarea>
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Alternativa y complementos a: </p>
-                    <p className={styles.textU2}>
+                    <textarea className={styles.txtBody}>
                         Paracetamol está indicado para el tratamiento de los síntomas del dolor leve a moderado.
                         Albuterol (ProAir HFA; Proventil HFA; Ventolin HFA),  (Xopenex HFA) e ipratropio (Combivent), para enfermedades respiratorias.
-                    </p>
+                    </textarea>
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Usos:</p>
                     <br />
@@ -60,21 +60,21 @@ export default function FichaUnica() {
                         Tallos y hojas crudos o cocinados
                     </p>
                         
-                        <li className={styles.lista}>Desordenes ginecologicos (regla atrasada).</li>
-                        <li className={styles.lista}>Curar abscesos en mujeres.</li>
-                        <li className={styles.lista}>Transtornosa digestivos como vomito, empacho, enlechado de ninos.</li>
-                        <li className={styles.lista}>Disminuir la produccion de leche</li>
-                        <li className={styles.lista}>Contra el dolor de rinon, vejiga y retencion de orina.</li>
-                        <li className={styles.lista}>Utilizado para el dolor de cabeza</li>
-                        <li className={styles.lista}>Enfermedades respiratorias.</li>
+                        <textarea className={styles.txtBody} placeholder={'Para agregar un uso, escribelo entre comillas simples y separalas con una coma.'}>'Desordenes ginecologicos (regla atrasada).',
+                        'Curar abscesos en mujeres.',
+                        'Transtornosa digestivos como vomito, empacho, enlechado de ninos.',
+                        'Disminuir la produccion de leche',
+                        'Contra el dolor de rinon, vejiga y retencion de orina.',
+                        'Utilizado para el dolor de cabeza',
+                        'Enfermedades respiratorias.'</textarea>
 
                     <hr className={styles.division} />
 
                     <div className={styles.fuentes}>
-                        <p>Fuentes:</p>
-                        <li>
-                            Rzedowski, G. C. de y J. Rzedowski, 2001. Flora fanerogámica del Valle de México. 2a ed. Instituto de Ecología y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. Pátzcuaro, Michoacán, México.
-                        </li>
+                        <p>Fuentes: </p>
+                        <textarea className={styles.txtRef} placeholder={'Escribelas entre comillas, separalas por una diagonal, entre los paréntesis agrega un enlace y cita en formato APA.'}>
+                            "Rzedowski, G. C. de y J. Rzedowski, 2001. Flora fanerogámica del Valle de México. 2a ed. Instituto de Ecología y Comisión Nacional para el Conocimiento y Uso de la Biodiversidad. Pátzcuaro, Michoacán, México. ()"/"Otra referencia"
+                        </textarea>
                     </div>
                     <hr className={styles.division} />
 

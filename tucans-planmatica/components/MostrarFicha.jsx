@@ -46,7 +46,7 @@ export default function MostrarFicha() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        <Card sx={{ padding: '15px' }} >
+                        <Card sx={{ padding: '15px' }} className={styles.card}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
@@ -60,7 +60,7 @@ export default function MostrarFicha() {
                                 <button className={styles.btnLinkFicha} >Mas informacion</button>
                             </CardActions>
                         </Card>
-                        <Card sx={{ padding: '15px' }}>
+                        <Card sx={{ padding: '15px' }} className={styles.card}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
