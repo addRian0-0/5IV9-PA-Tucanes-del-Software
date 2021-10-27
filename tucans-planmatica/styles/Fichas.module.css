@@ -174,6 +174,7 @@
 }
 
 .lista{
+    padding-left: 35px;
     font-size: 20px;
 }
 
@@ -188,3 +189,115 @@
     list-style: none;
     list-style-type: none;
 }
+
+/* Campos de texto */
+
+.txtEtiquetas{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 50%;
+    height: 26px;
+    resize: none;
+    padding: 5px;
+    transition:0.2s;
+}
+
+    .txtEtiquetas:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtEtiquetas:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtEtiquetas:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+.txtNombres{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 10%;
+    min-width: max-content;
+    height: 25px;
+    resize: none;
+    padding: 5px;
+    transition:0.2s;
+}
+
+    .txtNombres:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtNombres:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtNombres:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+.txtBody{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 100%;
+    height: 150px;
+    resize: none;
+    padding: 5px;
+    transition:0.2s;    
+}
+
+    .txtBody:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtBody:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtBody:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+.txtRef{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 75%;
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    transition:0.2s;    
+}
+
+    .txtRef:hover{
+        background-color: #dfdfdf;
+    }
+
+    .txtRef:focus{
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+
+    .txtRef:active {
+        outline: none;
+        border-radius: 10px;
+        border:1px rgb(0, 0, 0)
+    }
+    
