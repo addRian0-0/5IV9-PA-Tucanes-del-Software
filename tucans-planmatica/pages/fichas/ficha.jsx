@@ -6,7 +6,7 @@ import MainHead from '../../components/MainHead';
 export default function Ficha() {
     return (
         <div>
-            <MainHead tituloPestana="Inicio" />
+            <MainHead tituloPestana="Ficha" />
             <LayoutMenu>
                 <FichaUnica/>
             </LayoutMenu>

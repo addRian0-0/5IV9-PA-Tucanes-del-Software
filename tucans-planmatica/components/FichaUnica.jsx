@@ -101,7 +101,7 @@ export default function FichaUnica() {
                     <button className={styles.btnCalificar} >Calificar ficha</button>
                     <Link href="editar"><button className={styles.btnSolicitud} >Solicitud de edicion</button></Link>
                     <button className={styles.btnReporte} >Reportar ficha</button>
-                    <button className={styles.btnguardar} >Guardar ficha</button>
+                    <Link href="../user/fichasGuardadas"><button className={styles.btnguardar} >Guardar ficha</button></Link>
                 </CardActions>
             </Card>
         </div >
