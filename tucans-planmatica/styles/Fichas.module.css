@@ -328,7 +328,9 @@
 
     .inputImg:active {
         outline: none;
-        border-radius: 10px;
+        background-color: #ffffff;
+        border-radius: 2.5px;
+        border:1px solid  black;
         border:1px rgb(0, 0, 0)
     }
     
