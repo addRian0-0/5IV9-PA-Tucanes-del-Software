@@ -37,7 +37,7 @@ export default function FichaUnica() {
             <div className={styles.containerFicha}>
             <Card variant="outlined">
                 <CardContent>
-                    <p>Imagen: <input type="file" name="imagen"></input></p>
+                    <p>Imagen: <input type="file" name="imagen" className={styles.inputImg} id={styles.file}></input></p>
                     <p className={styles.titleficha} >Etiquetas: </p>
                     <textarea type={'text'} className={styles.txtEtiquetas}placeholder={'Ingresa las etiquetas de tu ficha.'}></textarea>
                     <hr className={styles.division} />

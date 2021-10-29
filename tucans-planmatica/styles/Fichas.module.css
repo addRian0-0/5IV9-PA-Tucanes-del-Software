@@ -301,3 +301,36 @@
         border:1px rgb(0, 0, 0)
     }
     
+.inputImg{
+    margin-top: 5px;
+    background-color: #f0f0f0;
+    border: none;
+    width: 133px;
+    
+    resize: none;
+    
+    transition:0.2s;    
+}
+
+    
+
+    .inputImg:hover{
+        background-color: #dfdfdf;
+        padding: 5px;
+        width: 143px;
+    }
+
+    .inputImg:hover{
+        outline: none;
+        
+        border:1px rgb(0, 0, 0)
+    }
+
+    .inputImg:active {
+        outline: none;
+        background-color: #ffffff;
+        border-radius: 2.5px;
+        border:1px solid  black;
+        border:1px rgb(0, 0, 0)
+    }
+    
