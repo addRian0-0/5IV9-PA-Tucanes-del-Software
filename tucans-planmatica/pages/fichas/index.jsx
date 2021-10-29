@@ -7,8 +7,11 @@ import MostrarFicha from '../../components/MostrarFicha';
 
 export default function Index() {
     return (
-        <LayoutMenu> 
+        <div>
+            <MainHead tituloPestana="Inicio" />
+            <LayoutMenu> 
             <MostrarFicha/>
-        </LayoutMenu>
+            </LayoutMenu>
+        </div>
     )
 }

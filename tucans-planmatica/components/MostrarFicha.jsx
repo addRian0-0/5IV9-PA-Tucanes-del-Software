@@ -18,7 +18,7 @@ export default function MostrarFicha() {
     return (
         <div className={styles.tableFichas}>
 
-            <TableContainer component={Paper}>
+            <TableContainer component={Paper} className={styles.fondo}>
                 <Table sx={{ minWidth: 650, margin: '20px', maxWidth: '95%' }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
@@ -46,7 +46,7 @@ export default function MostrarFicha() {
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        <Card sx={{ padding: '15px' }} >
+                        <Card sx={{ padding: '15px' }} className={styles.card}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>
@@ -60,7 +60,7 @@ export default function MostrarFicha() {
                                 <button className={styles.btnLinkFicha} >Mas informacion</button>
                             </CardActions>
                         </Card>
-                        <Card sx={{ padding: '15px' }}>
+                        <Card sx={{ padding: '15px' }} className={styles.card}>
                             <CardContent>
                                 <div>
                                     <p className={styles.textFich} >Etiquetas: </p>

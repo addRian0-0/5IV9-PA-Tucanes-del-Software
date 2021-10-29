@@ -14,13 +14,15 @@ import TextField from '@mui/material/TextField';
 import Stack from '@mui/material/Stack';
 import Autocomplete from '@mui/material/Autocomplete';
 import LayoutMenu from "../../components/LayoutMenu";
-
+import MainHead from '../../components/MainHead';
 export default function FichasGuardadas() {
     return (
+        
         <LayoutMenu>
+            <MainHead tituloPestana={'Fichas Guardadas'}/>
             <div className={styles.tableFichas}>
 
-                <TableContainer component={Paper}>
+                <TableContainer component={Paper} className={styles.fondo}>
                     <Table sx={{ minWidth: 650, margin: '20px', maxWidth: '95%' }} aria-label="simple table">
                         <TableHead>
                             <TableRow>
@@ -48,7 +50,7 @@ export default function FichasGuardadas() {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            <Card sx={{ padding: '15px' }} >
+                            <Card sx={{ padding: '15px' }} className={styles.card}>
                                 <CardContent>
                                     <div>
                                         <p className={styles.textFich} >Etiquetas: </p>
@@ -63,7 +65,7 @@ export default function FichasGuardadas() {
                                     <button className={styles.btnReporte} >Eliminar de mis fichas guardadas</button>
                                 </CardActions>
                             </Card>
-                            <Card sx={{ padding: '15px' }}>
+                            <Card sx={{ padding: '15px' }} className={styles.card}>
                                 <CardContent>
                                     <div>
                                         <p className={styles.textFich} >Etiquetas: </p>
