@@ -55,7 +55,7 @@ export default function FichaUnica() {
                     </textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU2}>Caracteristicas especiales: </p>
-                    <textarea className={styles.txtRef} placeholder={'Ingresa las características aquí.'}></textarea>
+                    <textarea className={styles.txtNombres} placeholder={'Ingresa las características aquí.'}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Alternativa y complementos a: </p>
                     <textarea className={styles.txtBody}>
