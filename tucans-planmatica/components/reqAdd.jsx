@@ -38,24 +38,24 @@ export default function FichaUnica() {
             <Card variant="outlined">
                 <CardContent>
                     <p className={styles.titleficha} >Etiquetas: </p>
-                    <textarea type={'text'} className={styles.txtEtiquetas}></textarea>
+                    <textarea type={'text'} className={styles.txtEtiquetas}placeholder={'Ingresa las etiquetas de tu ficha.'}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU}>Nombre comun: </p>
-                    <textarea className={styles.txtNombres}></textarea>
+                    <textarea className={styles.txtNombres}placeholder={'Ingresa el nombre.'}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU}>Nombre cientifico: </p>
-                    <textarea className={styles.txtNombres}></textarea>
+                    <textarea className={styles.txtNombres} placeholder={'Ingresa el nombre científico.'}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU2}>Origen y distribucion: </p>
                     <textarea className={styles.txtEtiquetas}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.textD} >Descripcion: </p>
-                    <textarea className={styles.txtBody} >
+                    <textarea className={styles.txtBody} placeholder={'Ingresa la descripción aquí.'}>
                         
                     </textarea>
                     <hr className={styles.division} />
                     <p className={styles.textU2}>Caracteristicas especiales: </p>
-                    <textarea className={styles.txtNombres}></textarea>
+                    <textarea className={styles.txtRef} placeholder={'Ingresa las características aquí.'}></textarea>
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Alternativa y complementos a: </p>
                     <textarea className={styles.txtBody}>
@@ -64,9 +64,6 @@ export default function FichaUnica() {
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Usos:</p>
                     <br />
-                    <p className={styles.textU2} >
-                        
-                    </p>
                         
                         <textarea className={styles.txtBody} placeholder={'Para agregar un uso, escribelo entre comillas simples y separalas con una coma.'}></textarea>
 
