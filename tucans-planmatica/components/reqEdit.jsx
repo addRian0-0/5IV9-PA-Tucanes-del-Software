@@ -14,14 +14,27 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Slider from '@mui/material/Slider';
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 import Link from 'next/link';
+import MainHead from './MainHead';
 function valuetext(value) {
     return `${value}°C`;
 }
 
 export default function FichaUnica() {
+    const [open, setOpen] = React.useState(false);
+    const handleClose = () => {
+        setOpen(false);
+    };
+    const handleToggle = () => {
+        setOpen(!open);
+    };
+
     return (
-        <div className={styles.containerFicha}>
+        <div>
+            <MainHead tituloPestana="Editar" />
+            <div className={styles.containerFicha}>
             <Card variant="outlined">
                 <CardContent>
                     <p className={styles.titleficha} >Etiquetas: </p>
@@ -54,11 +67,11 @@ export default function FichaUnica() {
                     <hr className={styles.division} />
                     <p className={styles.titlefichaU}>Usos:</p>
                     <br />
-                    <p className={styles.textU2} >
+                    <textarea className={styles.txtEtiquetas} >
                         Raiz cocida o cruda
                         Aromatica
                         Tallos y hojas crudos o cocinados
-                    </p>
+                    </textarea>
                         
                         <textarea className={styles.txtBody} placeholder={'Para agregar un uso, escribelo entre comillas simples y separalas con una coma.'}>'Desordenes ginecologicos (regla atrasada).',
                         'Curar abscesos en mujeres.',
@@ -80,14 +93,22 @@ export default function FichaUnica() {
 
                 </CardContent>
                 <CardActions>
-                    <Link href="/fichas/ficha">
-                            <button className={styles.btnLinkFicha} >Guardar</button>
-                    </Link>
+                    <a href="/fichas/ficha">
+                            <button className={styles.btnLinkFicha} onClick={handleToggle}>Guardar</button>
+                    </a>
                     <Link href="/fichas/ficha">
                             <button className={styles.btnReporte} >Cancelar</button>
                     </Link>
+                    <Backdrop
+                    sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                    open={open}
+                    onClick={handleClose}
+                    >
+                        <CircularProgress color="inherit" />
+                    </Backdrop>
                 </CardActions>
             </Card>
         </div >
+        </div>
     )
 }
